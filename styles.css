@@ -72,6 +72,10 @@ img {
   margin-left: 3rem;
 }
 
+.link a {
+  color: #152c5b;
+}
+
 .login a {
   color: #0045ff;
   font-weight: bold;
