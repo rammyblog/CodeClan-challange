@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="round-top-back-image">
+      <img src="./assets/umg/round.png" alt="" />
+    </div>
+
+    <div class="toggle-nav">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    <nav class="main-nav">
+      <div class="logo">
+        <div class="logo-container">
+          <img src="./assets/umg/payLogo.png" alt="" srcset="" />
+        </div>
+      </div>
+     
+      <ul class="links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Benefits</a></li>
+        <li class="link"><a href="#">Pricing</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link login"><a href="#">Login</li>
+
+        <li class="link">
+          <button class="getting_started">Getting Started</button>
+        </li>
+      </ul>
+
+      <ul class="mobile-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Benefits</a></li>
+        <li class="link"><a href="#">Pricing</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link login"><a href="#">Login</a></li>
+
+        <li class="link">
+          <button class="getting_started">Getting Started</button>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <header>
+        <h2 class="header__text">
+          Keep Track of Your Benefit at Pay Platform Payment
+        </h2>
+        <p class="header__subtitle">
+          Payment and budgeting digital business made simple
+        </p>
+        <div class="media">
+          <div class="img-container">
+            <img
+              class="play-center"
+              src="./assets/umg/play.png"
+              alt=""
+              srcset=""
+            />
+            <img src="./assets/umg/woman.png" alt="" />
+          </div>
+        </div>
+      </header>
+    </main>
+    <div class="round-bottom-back-image">
+      <div class="bottom-img">
+        <img src="./assets/umg/bottom.png" alt="" />
+      </div>
+    </div>
+  </body>
+  <script>
+      const bar = document.querySelector('.toggle-nav')
+      const mobileLinks = document.querySelector('.mobile-links')
+      bar.addEventListener('click', (ev) => {
+          console.log(mobileLinks.classList);
+        
+          mobileLinks.classList.toggle('nav-toogle')
+        //   if (!mobileLinks.classList.contains('nav-toogle')) {
+              
+        //       mobileLinks.style.transform = 'translateX(-100px)';
+        //       }else{
+        //         mobileLinks.style.transform = 'translateX(0)';
+    
+        //       }
+      })
+  </script>
+</html>
